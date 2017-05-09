@@ -6554,7 +6554,7 @@ var AuthenticationService = (function () {
         console.log(params);
         var headers = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["l" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://127.0.0.1:8000/api/v1/user/login/', params, {
+        return this.http.post('https://mydjangoapp57.herokuapp.com/api/v1/user/login/', params, {
             headers: headers
         })
             .map(function (response) {
@@ -6616,8 +6616,8 @@ var AdvancedsearchComponent = (function () {
         this.selectedGenres = [];
         this.results = [];
         this.link = 'https://www.omdbapi.com/?t=';
-        this.mylink = 'http://127.0.0.1:8000/api/v1/review/?format=json&tid=';
-        this.myuserlink = "http://127.0.0.1:8000/api/v1/usercritic";
+        this.mylink = 'https://mydjangoapp57.herokuapp.com/api/v1/review/?format=json&tid=';
+        this.myuserlink = "https://mydjangoapp57.herokuapp.com/api/v1/usercritic";
         this.movieTitleToRottenRatingMap = {};
         this.giphies = [];
         this.reviews = [];
@@ -6769,8 +6769,8 @@ var AdvancedsearchComponent = (function () {
 
 var ProfileComponent = (function () {
     function ProfileComponent(http) {
-        this.userlink = 'http://127.0.0.1:8000/api/v1/user/7/?format=json';
-        this.criticlink = 'http://127.0.0.1:8000/api/v1/critic?format=json';
+        this.userlink = 'https://mydjangoapp57.herokuapp.com/api/v1/user/7/?format=json';
+        this.criticlink = 'https://mydjangoapp57.herokuapp.com/api/v1/critic?format=json';
         this.critic = [];
         this.http = http;
         this.critics();
@@ -6844,7 +6844,7 @@ var SigninComponent = (function () {
     // console.log(params);
     // let headers = new Headers();
     // headers.append('Content-Type', 'application/json');
-    // this._http.post('http://127.0.0.1:8000/api/v1/user/login/', params , {
+    // this._http.post('https://mydjangoapp57.herokuapp.com/api/v1/user/login/', params , {
     //   headers: headers
     // }).subscribe(
     // ((data) => {
@@ -6893,7 +6893,7 @@ var SignupComponent = (function () {
         // let params = 'json=' + json;
         var headers = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["l" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        this._http.post('http://127.0.0.1:8000/api/v1/usercreate/', params, {
+        this._http.post('https://mydjangoapp57.herokuapp.com/api/v1/usercreate/', params, {
             headers: headers
         }).subscribe(function (data) {
             _this.router.navigate(['home']);
@@ -6982,8 +6982,8 @@ var MovieComponent = (function () {
     function MovieComponent(http) {
         this.title = 'MyMovieCritic';
         this.link = 'https://www.omdbapi.com/?t=';
-        this.mylink = 'http://127.0.0.1:8000/api/v1/review/?format=json&tid=';
-        this.myuserlink = "http://127.0.0.1:8000/api/v1/usercritic";
+        this.mylink = 'https://mydjangoapp57.herokuapp.com/api/v1/review/?format=json&tid=';
+        this.myuserlink = "https://mydjangoapp57.herokuapp.com/api/v1/usercritic";
         this.show = true;
         this.view = true;
         this.giphies = [];
